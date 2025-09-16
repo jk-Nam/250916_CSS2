@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>안녕하세요 [김개발]입니다.</title>
+    <!--
+    1. favicon
+    2. og tag
+    3. web font 
+     -->
     <style>
+      /* 폰트 설정 */
       @font-face {
         font-family: "YeogiOttaeJalnan";
         src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
@@ -84,34 +90,36 @@
         font-display: swap;
       }
 
+      /* 기본 전체 설정 */
       .title {
         font-family: "paperozi";
       }
 
-      :root {
-        margin: 0;
-        padding: 0;
+      * {
+        /* 모든 box width, height를 우리 지정에 맞게 */
+        box-sizing: border-box;
       }
 
       body {
-        margin: 0;
-        padding: 0;
+        margin: 0; /* 기본 마진 */
         font-family: "YeogiOttaeJalnan";
       }
+
+      /* 1. 색상 설정 */
+      /* 2. favicon, og tag */
+      /*  */
     </style>
   </head>
   <body>
     <!-- UI/UX 구성 -->
-    <!--
-    1. favicon
-    2. og tag
-    3. web font 
-     -->
+
     <h1 class="title">반갑습니다. 성장하는 백엔드 개발자 김개발입니다.</h1>
     <p>
       새로운 기술을 배우는 것을 즐기며, 동료들과 함께 성장하는 것을 중요하게
       생각합니다.
     </p>
+    <!-- flex 기반 레이아웃, svg repo -->
+    <!-- 기술 스택 (부트 캠프) -->
     <h2>기술 스택</h2>
     <ul>
       <li><b>언어:</b> Java, Python, JavaScript</li>
@@ -119,11 +127,7 @@
       <li><b>데이터베이스:</b> MySQL, PostgreSQL, MongoDB</li>
       <li><b>클라우드:</b> AWS, GCP</li>
     </ul>
-    <h2>경력</h2>
-    <ul>
-      <li><b>회사 A (2022.01 ~ 현재):</b> 백엔드 개발자로 재직 중</li>
-      <li><b>회사 B (2020.07 ~ 2021.12):</b> 풀스택 개발자로 근무</li>
-    </ul>
+    <!-- 포트폴리오 (3종) -->
     <h2>프로젝트</h2>
     <ul>
       <li>
