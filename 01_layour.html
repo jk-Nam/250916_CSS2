@@ -114,6 +114,7 @@
       /* 기본 전체 설정 */
       .title {
         font-family: "paperozi";
+        color: #dddad0;
       }
 
       * {
@@ -124,30 +125,94 @@
       body {
         margin: 0; /* 기본 마진 */
         font-family: "YeogiOttaeJalnan";
+        background-color: #57564f;
+        color: #f8f3ce;
       }
 
       /* 1. 색상 설정 */
-      /* 2. favicon, og tag */
-      /*  */
+      /*
+      전체 배경색 : 57564F
+      박스색 : 7A7A73
+      컨텐츠색 : DDDAD0
+      글자색 : F8F3CE
+      */
+
+      .box {
+        background-color: #7a7a73;
+        padding: 24px;
+        border-radius: 12px;
+        /* border-radius: 50%; */
+      }
+
+      body > section {
+        /* body에 바로 속한 경우 */
+        /* 자식 선택 -> 바로 속한 경우 */
+        padding: 24px;
+      }
+
+      #intro div {
+        line-height: 1.6;
+      }
+
+      #intro .title {
+        text-align: center;
+      }
+
+      #tech-stack ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        /* justify-content: center; */
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+      }
+
+      #tech-stack li {
+        list-style: none;
+        width: 128px;
+        aspect-ratio: 1;
+        background-color: #dddad0;
+        border-radius: 8px;
+        border: 1px transparent solid;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #tech-stack img {
+        width: 90%;
+        background-color: white;
+        border-radius: 50%;
+      }
     </style>
   </head>
   <body>
     <!-- UI/UX 구성 -->
-
-    <h1 class="title">반갑습니다. 성장하는 백엔드 개발자 김개발입니다.</h1>
-    <p>
-      새로운 기술을 배우는 것을 즐기며, 동료들과 함께 성장하는 것을 중요하게
-      생각합니다.
-    </p>
+    <section id="intro">
+      <h1 class="title">반갑습니다, 성장하는 백엔드 개발자 [김개발]입니다</h1>
+      <section class="box">
+        <p>
+          사용자에게 더 나은 가치를 제공하기 위해, 안정적이고 확장 가능한
+          시스템을 구축하는 데 깊은 흥미를 느낍니다. 새로운 기술을 배우고
+          적용하며 꾸준히 성장하는 개발자가 되겠습니다.
+        </p>
+      </section>
+    </section>
     <!-- flex 기반 레이아웃, svg repo -->
     <!-- 기술 스택 (부트 캠프) -->
-    <h2>기술 스택</h2>
-    <ul>
-      <li><b>언어:</b> Java, Python, JavaScript</li>
-      <li><b>프레임워크:</b> Spring Boot, Django, React</li>
-      <li><b>데이터베이스:</b> MySQL, PostgreSQL, MongoDB</li>
-      <li><b>클라우드:</b> AWS, GCP</li>
-    </ul>
+    <section id="tech-stack">
+      <section class="box">
+        <h2>🖥기술 스택</h2>
+        <ul>
+          <li><img src="img/java.png" alt="JAVA" /></li>
+          <li><img src="img/spring.png" alt="SPRING" /></li>
+          <li><img src="img/mysql.png" alt="MySQL" /></li>
+          <li><img src="img/aws.png" alt="AWS" /></li>
+          <li><img src="img/github.png" alt="GitHub" /></li>
+        </ul>
+      </section>
+    </section>
     <!-- 포트폴리오 (3종) -->
     <h2>프로젝트</h2>
     <ul>
